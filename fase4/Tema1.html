@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Construcción II</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+    <link rel="stylesheet" href="css/misEstilos.css">
+</head>
+
+<body>
+    <!-- seccion del encabezado -->
+    <header>
+        <img src="img/logotipo1.png" alt="logotipo1" height="100" width="350">
+        <h1> Diseño de Sitios Web Flex Box, CSS Grid</h1>
+        <img src="img/logotipo1.png" alt="logotipo1" height="100" width="350">
+     </header>
+
+    <!-- Menu Horizontal -->
+    <nav>
+        <ul class="menu li">
+            <li><a href="index.html" class="menu">inicio</a></li>
+            <li><a class="menu">Temas</a>
+                 <ul class="dropdown">
+                    <li><a href="Tema1.html" class="menu">Tema 1</a></li>
+                    <li><a href="Tema2.html" class="menu">Tema 2</a></li>
+                 </ul>
+            </li>
+                  <li><a class="menu">Recursos Digitales</a>
+                  <ul class="dropdown">
+                    <li><a href="Recurso1.html" class="menu">Recurso 1</a></li>
+                    <li><a href="Recurso2.html" class="menu">Recurso 2</a></li>
+                  </ul>
+                </li>
+                <li><a class="menu">Aprendizaje</a>
+                      <ul class="dropdown">
+                          <li><a href="#"> Actividad 1</a></li>
+                          <li><a href="#"> Actividad 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="Autor.html">AUTOR</a></li>
+            <ul class="dropdown li">
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Seccion Central -->
+
+    <div class="contenedor">
+        <aside>
+           <h4>Pagina de Restraduria Nacional </h4>
+           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRegistraduriaNacional&tabs=timeline&width=340&height=131&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="131" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> 
+          
+        <br>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRegistraduriaNacional&tabs=timeline&width=340&height=131&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> 
+    </br>
+    <aside>
+        <h3>Red Social</h3>
+     </aside>
+   <a class="twitter-timeline" data-width="275" data-height="420" data-dnt="true" href="https://twitter.com/UniversidadUNAD">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>    
+
+        <section>
+        <hr>
+        <h3>Conceptos Básicos de flexbox</h3>
+        <p>El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías. </p>
+
+        <br> Cuando describimos a flexbox como unidimensional destacamos el hecho que flexbox maneja el layout en una sola dimensión a la vez — ya sea como fila o como columna. Esto contrasta con el modelo bidimensional del Grid Layout de CSS, el cual controla columnas y filas a la vez.</br>
+
+            <article>
+               <h3>Los dos ejes de flexbox</h3> 
+               <p> Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes — el eje principal y el eje cruzado. El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a este. Todo lo que hacemos con flexbox está referido a estos dos ejes, por lo que vale la pena entender cómo trabajan desde el principio.
+               </p>
+               <br>
+               <h3>El eje principal</h3> 
+            </br>
+            <p> El eje principal está definido por flex-direction, que posee cuatro posibles valores:
+
+                <br> row </br>
+                <br> row-reverse  </br>
+                <br> column  </br>
+                <br> column-reverse  </br>
+                <br> Si elegimos row o row-reverse, el eje principal correrá a lo largo de la fila según la dirección de la línea.  </br>
+            </p>
+               <img src="img/Basics1.png" alt="Basics1" height="200" width="700"> 
+               <p>Imagen de Referencia Tomada del sitio web: developer</p>
+               <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#el_eje_principal"></a>   
+
+            <p> Al elegir column o column-reverse el eje principal correrá desde el borde superior de la página hasta el final — según la dirección del bloque.
+            </p> 
+            <img src="img/Basics2.png" alt="Basics2" height="200" width="700"> 
+            <p>Imagen de Referencia Tomada del sitio web: developer</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#el_eje_principal"></a> 
+
+            </article>
+            <article>
+                <h3>Líneas de inicio y de fin</h3>
+                <br>
+                <p>Otra área vital de entendimiento es cómo flexbox no hace suposiciones sobre la manera de escribir del documento. En el pasado, CSS estaba muy inclinado hacia el modo de escritura horizontal y de izquierda a derecha. Los métodos modernos de layout acogen la totalidad de modos de escritura así que no es necesario asumir que una línea de texto empezará arriba del documento y correrá de izquierda a derecha, con nuevas líneas dispuestas una abajo de la otra.</br>
+
+                   <br>Puede leer más acerca de la relación que hay entre flexbox y la especificación de los Modos de Escritura en un artículo posterior, sin embargo la siguiente descripción debería ayudar para explicar porqué no se habla de izquierda y derecha ni de arriba o abajo a la hora de describir la dirección en la que fluyen los ítems flex.</br>
+                    
+                    <br>Si flex-direction es row y estoy trabajando en español, entonces el margen inicial del eje principal quedará a la izquierda, y el margen final a la derecha.</br>
+
+                   <img src="img/Basics5.png" alt="Basics5" height="300" width="700">
+                   <p>Imagen de Referencia Tomada del sitio web: developer</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#el_eje_principal"></a> 
+
+                </p>  
+                </article>
+    </section>
+</div>
+<!-- Pie de página -->
+<footer >
+    <p>
+        Julian Alexander Angel.</p> 
+        <p>Skype: julianangel21@hotmail.com</p>
+        <p>fecha: 18/06/2021 
+        </p>           
+        
+
+        <h4>
+            Universidad Nacional Abierta y a Distancia UNAD de Colombia
+            <br>
+            Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional - SNIES 2102
+            </h4>
+</footer>
+</body>
+</html>

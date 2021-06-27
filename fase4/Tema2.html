@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Construcción II</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+    <link rel="stylesheet" href="css/misEstilos.css">
+</head>
+
+<body>
+    <!-- seccion del encabezado -->
+    <header>
+        <img src="img/logotipo1.png" alt="logotipo1" height="100" width="350">
+        <h1> Diseño de Sitios Web Flex Box, CSS Grid</h1>
+        <img src="img/logotipo1.png" alt="logotipo1" height="100" width="350">
+     </header>
+
+    <!-- Menu Horizontal -->
+    <nav>
+        <ul class="menu li">
+            <li><a href="index.html" class="menu">inicio</a></li>
+            <li><a class="menu">Temas</a>
+                 <ul class="dropdown">
+                    <li><a href="Tema1.html" class="menu">Tema 1</a></li>
+                    <li><a href="Tema2.html" class="menu">Tema 2</a></li>
+                 </ul>
+            </li>
+                  <li><a class="menu">Recursos Digitales</a>
+                  <ul class="dropdown">
+                    <li><a href="Recurso1.html" class="menu">Recurso 1</a></li>
+                    <li><a href="Recurso2.html" class="menu">Recurso 2</a></li>
+                  </ul>
+                </li>
+                <li><a class="menu">Aprendizaje</a>
+                      <ul class="dropdown">
+                          <li><a href="#"> Actividad 1</a></li>
+                          <li><a href="#"> Actividad 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="Autor.html">AUTOR</a></li>
+            <ul class="dropdown li">
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Seccion Central -->
+
+    <div class="contenedor">
+        <aside>
+           <h4>Pagina de Restraduria Nacional </h4>
+           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRegistraduriaNacional&tabs=timeline&width=340&height=131&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="131" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> 
+          
+        <br>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRegistraduriaNacional&tabs=timeline&width=340&height=131&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> 
+    </br>
+    <aside>
+        <h3>Red Social</h3>
+     </aside>
+   <a class="twitter-timeline" data-width="275" data-height="420" data-dnt="true" href="https://twitter.com/UniversidadUNAD">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside> 
+
+        <section>
+        <hr>
+        <h3>CSS Grid Layout</h3>
+        <p>CSS Grid layout contiene funciones de diseño dirigidas a los desarrolladores de aplicaciones web. El CSS grid se puede utilizar para lograr muchos diseños diferentes. También se destaca por permitir dividir una página en áreas o regiones principales, por definir la relación en términos de tamaño, posición y capas entre partes de un control construido a partir de primitivas HTML. </p>
+        <p>Al igual que las tablas, el grid layout permite a un autor alinear elementos en columnas y filas. Sin embargo, con CSS grid son posibles muchos más diseños y de forma más sencilla que con las tablas. Por ejemplo, los elementos secundarios de un contenedor de cuadrícula podrían posicionarse para que se solapen y se superpongan, de forma similar a los elementos posicionados en CSS.</p>  
+        <article>
+               <h3>Maquetación con CSS Grid</h3> 
+               <p> La maquetación con CSS siempre ha sido… inesperada. Llena de tablas con infinitas columnas y filas, incontables floats y clears sin ton ni son. Y por supuesto con Bootstrap, aunque claro, si querías salir de lo establecido mucha suerte. Todo esto cambia con Grid.
+               </p> 
+               <figure>
+               <img src="img/maquetacion.png" alt="maquetacion" height="200" width="700"> 
+               <p>Imagen de Referencia Tomada del sitio web: campusmvp</p>
+               <a href="https://www.campusmvp.es/recursos/post/como-maquetar-html-con-el-sistema-grid-de-css.aspx"></a>  
+               <figcaption>
+                <span>
+                    <a href="https://www.campusmvp.es/recursos/post/como-maquetar-html-con-el-sistema-grid-de-css.aspx" target="_blank" class="articulo">Capturado de campusmvp.com</a>
+                </span>
+
+            </figcaption>
+        </figure>                        
+            </article>
+            <article>
+
+                <h3>Ventajas de usar CSS Grid Layout</h3>
+                <p>Con CSS Grid Layout el proceso de colocar y distribuir los elementos en una página es muy sencillo, pero también nos brinda otros beneficios, como lo son:</p>
+                   <br> Mayor flexibilidad.</br>
+                   <br> Reducción considerable del código empleado.</br>
+                   <br> Responsive más sencillo de realizar.</br>
+                   <br>  Buen soporte en los navegadores.</br>
+
+                   <h3> ¿ Cómo funciona el Grid ?</h3>
+                <br>De forma similar a Flexbox, cuando indicamos a un elemento HTML que va a usar Grid, en realidad esto va a afectar a la disposición de sus hijos. Concretamente, vamos a colocar los elementos hijos sobre una rejilla formada en el elemento padre. Los bordes de las cajas hijas estarán “anclados” a las líneas de dicha rejilla. </br>
+
+            <p>De forma similar a Flexbox, a la caja padre le debemos de indicar display: grid; si queremos que se comporte como un elemento en bloque o display: inline-grid; si queremos que se comporte como un elemento en línea.</p>
+
+            <p>Además, deberemos de indicar con grid-template-rows y grid-template-columns, como es la rejilla que vamos a usar para colocar los elementos hijos.</p>
+
+            <p>Finalmente, a cada elemento hijo le podemos indicar exactamente dónde va a ir situado en la rejilla usando las propiedades CSS grid-column y grid-row. Esto implica que el orden de los elementos hijos en el HTML no es realmente importante, y que lo podremos alterar sin problemas si lo necesitamos cuando hagamos el responsive.</p>
+
+                    <figure>
+                        <img src="img/grid2.jpg" alt="grid2" height="400" width="800">
+                        <p>Imagen de Referencia Tomada del sitio web: javadesde0</p>
+                        <figcaption>
+                            <span>
+                                <a href="https://javadesde0.com/css-grid-layout/" target="_blank" class="articulo">Capturado de javadesde0</a>
+                            </span>
+        
+                        </figcaption>
+                    </figure>
+                </p>  
+                </article>
+    </section>
+</div>
+<!-- Pie de página -->
+<footer >
+    <p>
+        Julian Alexander Angel.</p> 
+        <p>Skype: julianangel21@hotmail.com</p>
+        <p>fecha: 18/06/2021 
+        </p>           
+        
+
+        <h4>
+            Universidad Nacional Abierta y a Distancia UNAD de Colombia
+            <br>
+            Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional - SNIES 2102
+            </h4>
+</footer>
+</body>
+</html>
