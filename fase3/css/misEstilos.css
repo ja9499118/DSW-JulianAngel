@@ -1,33 +1,41 @@
 *{
-    margin: 10px; 
+    margin: 5px; 
     border-radius: 8px;
 }
 
 header{
     background-color: rgb(252, 190, 56);
     display: flex;
-    justify-content: space-between; /* justificar*/
+    justify-content: space-between;
     align-items: center;
 }
 
-}
-.contenedor{ /* Crea una rejilla con 1 fila y 4 columnas)*/
+.contenedor{ 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-aside{
+aside {
     grid-column: 1/2;
-    background-color: rgba(216, 216, 247, 0.911);
+    background-color: rgba(168, 168, 245, 0.911);
 }
 section{
     grid-column: 2/5;
-    background-color: rgba(74, 74, 116, 0.911);
+    background-color: rgba(199, 199, 250, 0.911);
+    align-items: center;
 }
-footer{
+
+
+
+.justificado{
+     text-align: justify;
+}
+
+.centrado{
     text-align: center;
-    background-color: rgb(4, 19, 4);
-    color: white;
-    padding: 10px;
+}
+
+body {
+    background-color: #ecf0f1;
 }
 
 .dropdown li {
@@ -51,7 +59,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: #fff;
-background:rgb(12, 6, 0);
+background:rgb(247, 135, 23);
 height: 55px;
 text-decoration: none;
 }
@@ -66,8 +74,15 @@ text-decoration: none;
 .menu a:hover {
     background:blueviolet;
     color: #fff;
-
 }
+
+footer{
+    text-align: center;
+    background-color: rgb(4, 19, 4);
+    color: white;
+    padding: 10px;
+}
+
   h1{
     margin-top: 35px;
     font-family: 'Libre Franklin', sans-serif;
@@ -77,3 +92,14 @@ text-decoration: none;
     color: #000000;
     margin-bottom: 0px;
   }
+
+}
+h6{
+  margin-top: 35px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-right: 16px;
+  color: #000000;
+  margin-bottom: 0px;
+}
